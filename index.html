@@ -5,6 +5,13 @@
         <meta charset="utf-8">
 
         <style>
+            body{
+                margin:0px;
+            }
+            #endinfo{
+                font-size: larger;
+                text-align: center;
+            }
             a {
                 color:black;
                 text-decoration: none;
@@ -12,44 +19,80 @@
             h1 {
                 font-size: 400%;
                 text-align: center;
+                border-bottom: 2px solid gray;
+                padding:20px;
+                margin-bottom:0;
+            }
+            h3{
+                font-size: 200%;
+                border-right: 2px solid gray;
+                width:100%;
+                padding:20px;
+                padding-right: 1%;
+                margin:0px;
+                margin-left: 10px;
+            }
+            h4{
+                font-size: 200%;
             }
             .active{
-                color:green
+                color:dimgray
+            }
+            ol{
+                border-right: 2px solid gray;
+                width:100%;
+                margin:0px;
+                margin-left: 10px;
+                padding:20px;
+                padding-right:1%;
+            }
+            ul{
+                border-right: 2px solid gray;
+                width:100%;
+                margin:0px;
+                margin-left: 10px;
+                padding:20px;
+                padding-right:1%;
+            }
+            #sec-top-grid{
+                display:grid;
+                grid-template-columns: 1fr 4fr;
+            }
+            #sec-top-grid2{
+                padding-left: 10%;
+                padding-right: 10%;
             }
         </style>
     </head>
     <body>
         <h1><a href="index.html" class="active">What Is The Bin</a></h1>
-        <p>
+    <dive id="sec-top-grid">  
+        <dive id="sec-top-grid1">  
             <h3>Index</h3>
             <ol>
                 <li><a href="whatistheBin.html" style="text-decoration: underline;" >How can we define 'Bin'</a></li>
                 <li><a href="whichBindowe.html" style="text-decoration: underline;" > which Bin do we used to prefer?</a></li>
                 <li><a href="isBinafull.html" style="text-decoration: underline;" >Is 'Bin' a full-name?</a></li>
             </ol>
-            <!--
-            <ol>
-                <li><a href="whatistheBin.html"><font color="green">How can we define 'Bin'</font></a></li>
-                <li><a href="whichBindowe.html"><font color="green">which Bin do we used to prefer?</font></a></li>
-                <li><a href="isBinafull.html"><font color="green">Is 'Bin' a full-name?</font></a></li>
-            </ol>
-        -->
-            <h4>Who's join in this document.</h4>
+            <h3>Who's join in this document.</h3>
             <ul>
                 <li>me</li>
                 <li>and me</li>
                 <li>and also me!</li>
             </ul>
-        </p>
-        <h4>see more info. about Bin: 
-            <br>contact us: (082+)
-        </h4>
-        <p style="margin-top:150px;">
+        </dive>
+        <dive id="sec-top-grid2">
             <h4>
                 ah-rae video chamgo
             </h4>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/7T7r_oSp0SE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width="80%" height="100%" src="https://www.youtube.com/embed/7T7r_oSp0SE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </dive>
+    </dive>
+
+        <p id="endinfo" style="margin: 20%;margin-bottom: 5%";>
+            see more info. about Bin: <br>contact us: (082+)
         </p>
+
         <div id="disqus_thread"></div>
         <script>
             /**
