@@ -72,19 +72,33 @@
                 iframe{
                     display: block;
                     margin: auto;
+                    width: 80%;
+                    height: 100%;
+                    aspect-ratio: 2/1;
                 }
 
+            }
+            #darkmod_button{
+                margin: 4px;
+                border: 2px;
+                border-color: black;
+                background-color: whitesmoke;
             }
         </style>
     </head>
     <body>
-        <input type="button" value="day" onclick="
-            document.querySelector('body').style.backgroundColor='white';
-            document.querySelector('body #sec-top-grid1 ').style.color='black';
-        ">
-        <input type="button" value="night" onclick="
-            document.querySelector('body').style.backgroundColor='black';
-            document.querySelector('body #sec-top-grid1 ').style.color='white';
+        <input id="darkmod_button" type="button" value="Darkmode" onclick="
+            var target = document.querySelector('body');
+            if (this.getAttribute('value')!=='Darkmode'){
+                target.style.backgroundColor='white';
+                target.style.color='black';
+                document.querySelector('#darkmod_button').setAttribute('value','Darkmode');
+            } 
+            else{
+                target.style.backgroundColor='black';
+                target.style.color='white';
+                document.querySelector('#darkmod_button').setAttribute('value','Daymode');
+            }
         ">
         <h1><a href="index.html" class="active">What Is The Bin</a></h1>
     <dive id="sec-top-grid">  
