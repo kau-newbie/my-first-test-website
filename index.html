@@ -12,11 +12,11 @@
                 font-size: larger;
                 text-align: center;
             }
-            a {
-                color:black;
-                text-decoration: none;
+            a, a:visited, a:hover, a:active{
+                color:inherit;
             }
             h1 {
+                color:dimgray !important;
                 font-size: 400%;
                 text-align: center;
                 border-bottom: 2px solid gray;
@@ -36,9 +36,7 @@
                 margin:0;
                 padding:2%;
             }
-            .active{
-                color:dimgray
-            }
+
             #sec-top-grid{
                 display:grid;
                 grid-template-columns: 1fr 4fr;
@@ -52,9 +50,11 @@
             }
             sec-top-grid1 ol{
                 list-style-position: inside;
+                color:black !important;
             }
             sec-top-grid1 ul{
                 list-style-position: inside;
+                color:black !important;
             }
             #sec-top-grid2{
                 padding-left: 10%;
@@ -78,14 +78,22 @@
         </style>
     </head>
     <body>
+        <input type="button" value="day" onclick="
+            document.querySelector('body').style.backgroundColor='white';
+            document.querySelector('body #sec-top-grid1 ').style.color='black';
+        ">
+        <input type="button" value="night" onclick="
+            document.querySelector('body').style.backgroundColor='black';
+            document.querySelector('body #sec-top-grid1 ').style.color='white';
+        ">
         <h1><a href="index.html" class="active">What Is The Bin</a></h1>
     <dive id="sec-top-grid">  
         <dive id="sec-top-grid1">  
             <h3>Index</h3>
             <ol>
-                <li><a href="whatistheBin.html" style="text-decoration: underline;" >How can we define 'Bin'</a></li>
-                <li><a href="whichBindowe.html" style="text-decoration: underline;" > which Bin do we used to prefer?</a></li>
-                <li><a href="isBinafull.html" style="text-decoration: underline;" >Is 'Bin' a full-name?</a></li>
+                <li><a href="whatistheBin.html" >How can we define 'Bin'</a></li>
+                <li><a href="whichBindowe.html"> which Bin do we used to prefer?</a></li>
+                <li><a href="isBinafull.html" >Is 'Bin' a full-name?</a></li>
             </ol>
             <h3>Who's join in this document.</h3>
             <ul>
