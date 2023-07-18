@@ -19,12 +19,33 @@
                 margin-right: 10%;
             }
             .active{
-                color:green
+                color:green !important;
             }
-            
+            #darkmod_button{
+                margin: 4px;
+                border: 2px;
+                border-color: black;
+                background-color: whitesmoke;
+            }
+            a, a:visited, a:hover, a:active{
+                color:inherit;
+            }
         </style>
     </head>
     <body>
+        <input id="darkmod_button" type="button" value="Darkmode" onclick="
+            var target = document.querySelector('body');
+            if (this.getAttribute('value')!=='Darkmode'){
+                target.style.backgroundColor='white';
+                target.style.color='black';
+                document.querySelector('#darkmod_button').setAttribute('value','Darkmode');
+            } 
+            else{
+                target.style.backgroundColor='black';
+                target.style.color='white';
+                document.querySelector('#darkmod_button').setAttribute('value','Daymode');
+            }
+        ">
         <h1><a href="index.html">What Is The Bin</a></h1>
         <p>
             <h3>Index</h3>
